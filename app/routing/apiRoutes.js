@@ -40,9 +40,9 @@ app.post("/api/friends", function(req, res) {
     }
     
     surveyResults.friendName = surveyResults.name.replace(/\s+/g, "").toLowerCase();
-    // surveyResults.scores = surveyResults.scores.map(function (x) {
-    //   return parseInt(x, 10);
-    // });
+    surveyResults.scores = surveyResults.scores.map(function (x) {
+      return parseInt(x, 10);
+    });
     friends.push(surveyResults);
 
     res.json(bestMatch);
