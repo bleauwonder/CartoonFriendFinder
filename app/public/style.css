@@ -2,6 +2,7 @@
 body{
   text-align:center;
   font-family: 'Bungee Outline', cursive;
+  background-image: url('/app/public/images/asfalt-light.png');
 }
 body:before{
   content:'';

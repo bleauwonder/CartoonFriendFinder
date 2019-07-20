@@ -14,12 +14,74 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 
   <!-- Chosen -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Bungee+Outline&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="/app/public/style.css">
+  
   <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
 
 </head>
 
 <body>
+    <style>
+        body{
+          text-align:center;
+          color: #1AAB8A;
+        }
+        .container {
+          background-image: url('/app/public/images/asfalt-light.png');
+        }
+  
+        body:before{
+          content:'';
+          height:100%;
+          display:inline-block;
+          vertical-align:middle;
+        }
+  
+        h1, h2 {
+          font-family: 'Bungee Outline', cursive;
+        }
+  
+        button{
+          background:#1AAB8A;
+          color:#fff;
+          border:none;
+          position:relative;
+          height:60px;
+          font-size:1.6em;
+          padding:0 2em;
+          cursor:pointer;
+          transition:800ms ease all;
+          outline:none;
+        }
+        button:hover{
+          background:#fff;
+          color:#1AAB8A;
+        }
+        button:before,button:after{
+          content:'';
+          position:absolute;
+          top:0;
+          right:0;
+          height:2px;
+          width:0;
+          background: #1AAB8A;
+          transition:400ms ease all;
+        }
+        button:after{
+          right:inherit;
+          top:inherit;
+          left:0;
+          bottom:0;
+        }
+        button:hover:before,button:hover:after{
+          width:100%;
+          transition:800ms ease all;
+        }
+  </style>
 
   <div class="container">
 
@@ -148,14 +210,14 @@
       <option value="3">3</option>
       <option value="4">4</option>
       <option value="5">5 (Strongly Agree)</option>
-    </select> -->
+    </select>
 
     <br>
     <br>
 
     <!-- Submit Button -->
-    <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit"><i class="fa fa-check-circle" aria-hidden="true"></i>
-     Submit</button>
+    <button type="submit" class="button" id="submit">
+     Find My Bestie!</button>
 
     <hr>
     <footer class="footer">
@@ -176,9 +238,10 @@
           <button type="button" class="close" data-dismiss="modal">&times;</button>
           <h2 class="modal-title"><strong>Best Match</strong></h2>
         </div>
-        <div class="modal-body">
+        <div class="modal-body text-center">
+          <h3>Your Cartoon Best Friend is </h3>
           <h2 id="match-name"></h2>
-          <img id="match-img" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg" alt="">
+          <img id="match-img" src="" alt="">
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -239,16 +302,16 @@
           name: $("#name").val(),
           photo: $("#photo").val(),
           scores: [
-            parseInt($("#q1").val()),
+            $("#q1").val(),
             $("#q2").val(),
-            // $("#q3").val(),
-            // $("#q4").val(),
-            // $("#q5").val(),
-            // $("#q6").val(),
-            // $("#q7").val(),
-            // $("#q8").val(),
-            // $("#q9").val(),
-            // $("#q10").val()
+            $("#q3").val(),
+            $("#q4").val(),
+            $("#q5").val(),
+            $("#q6").val(),
+            $("#q7").val(),
+            $("#q8").val(),
+            $("#q9").val(),
+            $("#q10").val()
           ]
         };
 console.log(userData);

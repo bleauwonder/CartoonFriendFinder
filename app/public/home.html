@@ -4,35 +4,87 @@
 <head>
   <meta charset="UTF-8">
 
-
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="/app/public/style.css">
+  
+  <link rel="stylesheet" href="/app/public/style.css">
+
   <link href="https://fonts.googleapis.com/css?family=Bungee+Outline&display=swap" rel="stylesheet">
 
   <title>Friend Finder</title>
 </head>
 
 <body>
+<style>
+      body{
+        text-align:center;
+        color: #1AAB8A;
+        background-image: url('/app/public/images/background-blur-blurred-255379.jpg')
+      }
+
+      body:before{
+        content:'';
+        height:100%;
+        display:inline-block;
+        vertical-align:middle;
+      }
+
+      h1, h2 {
+        font-family: 'Bungee Outline', cursive;
+      }
+
+      button{
+        background:#1AAB8A;
+        color:#fff;
+        border:none;
+        position:relative;
+        height:60px;
+        font-size:1.6em;
+        padding:0 2em;
+        cursor:pointer;
+        transition:800ms ease all;
+        outline:none;
+      }
+      button:hover{
+        background:#fff;
+        color:#1AAB8A;
+      }
+      button:before,button:after{
+        content:'';
+        position:absolute;
+        top:0;
+        right:0;
+        height:2px;
+        width:0;
+        background: #1AAB8A;
+        transition:400ms ease all;
+      }
+      button:after{
+        right:inherit;
+        top:inherit;
+        left:0;
+        bottom:0;
+      }
+      button:hover:before,button:hover:after{
+        width:100%;
+        transition:800ms ease all;
+      }
+</style>
 
   <div class="container">
-    <div class="jumbotron">
+    <div class="jumbotron text-center">
       <h1>Cartoon Friend Finder</h1>
-      <h3>Answer a few basic questions and see who might be your cartoon best friend!</h3>
+      <h3>Answer a few basic questions.</h3>
+      <h3>See who might be your cartoon best friend!</h3>
       <hr>
 
-        <!-- <div>
-          
-              <button type="button" class="button"><p class="btnText">Go To</p>
-              <div class="btnTwo"><p class="btnText2">Toontown!</p>
-              </div>
-            </div> -->
-            <a href="/survey"><button type="button" class="btn">
-              <h4><span class="glyphicon glyphicon-list-alt"></span> Go to Toontown</h4></button></a>
-          </div>
-      
+            <a href="/survey"><button type="button" class="button"> Go to Toontown</button></a>
+
+      <br>
+      <br>
       <div>
-        <img src="https://www.roxie.com/wp-content/uploads/2018/05/who-framed-roger-rabbit-still.jpg" class="img-fluid" alt="Eddie and Roger Rabbit">
+        <img src="https://www.roxie.com/wp-content/uploads/2018/05/who-framed-roger-rabbit-still.jpg" class="img-fluid mx-auto" alt="Eddie and Roger Rabbit">
       </div>
     </div>
   </div>

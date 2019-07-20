@@ -36,8 +36,8 @@ var friends = [
     },
 
     {
-      name: "the Tazmanian Devil",
-      photo: "https://i.imgflip.com/s0fqa.jpg",
+      name: "the Tasmanian Devil",
+      photo: "https://upload.wikimedia.org/wikipedia/en/thumb/c/c4/Taz-Looney_Tunes.svg/220px-Taz-Looney_Tunes.svg.png",
       scores: [      
         5,
         4,

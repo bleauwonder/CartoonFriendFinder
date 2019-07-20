@@ -18,14 +18,10 @@ app.post("/api/friends", function(req, res) {
     var surveyResults = req.body;
     var userScores = surveyResults.scores;
 
-    var userName = surveyResults.name;
-    var userPhoto = surveyResults.photo;
-
     // variable used to calculate difference between new user and all other users scores
     var totalDifference = 0;
     // loop through the friends array to get each set of scores for friends
     for (var i = 0; i < friends.length - 1; i++) {
-      console.log(friends[i].name);
       totalDifference = 0;
 
       // loop through that friend's score and the user's score to calculate the absolute difference
