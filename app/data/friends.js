@@ -55,7 +55,7 @@ var friends = [
 
     {
       name: "Bugs Bunny",
-      photo: "https://static.hixic.com/assets/gallery/uploads/e_01152019093436.jpg",
+      photo: "https://upload.wikimedia.org/wikipedia/en/thumb/1/17/Bugs_Bunny.svg/220px-Bugs_Bunny.svg.png",
       scores: [      
         3,
         1,
@@ -73,7 +73,7 @@ var friends = [
 
     {
       name: "Homer Simpson",
-      photo: "https://static.hixic.com/assets/gallery/uploads/e_01152019093502.jpg",
+      photo: "https://upload.wikimedia.org/wikipedia/en/0/02/Homer_Simpson_2006.png",
       scores: [      
         2,
         3,
@@ -104,7 +104,7 @@ var friends = [
         3,
         2
         ],
-      riendName: "Donald"
+      friendName: "Donald"
     },
 
     {
@@ -127,7 +127,7 @@ var friends = [
 
     {
       name: "Scooby Doo",
-      photo: "https://www.wbkidsgo.com/Portals/3/Content/Hero/HeroScoobyShaggy/Source/Default/WB_SD_HeroImage_ScoobyShaggy_v1.png",
+      photo: "https://upload.wikimedia.org/wikipedia/en/thumb/5/53/Scooby-Doo.png/150px-Scooby-Doo.png",
       scores: [      
         4,
         1,
