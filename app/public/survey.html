@@ -235,8 +235,8 @@
       <!-- Modal content-->
       <div class="modal-content">
         <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h2 class="modal-title"><strong>Best Match</strong></h2>
+          <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
+          <h2 class="modal-title"><strong>Cartooniest Match</strong></h2>
         </div>
         <div class="modal-body text-center">
           <h3>Your Cartoon Best Friend is </h3>
@@ -244,7 +244,7 @@
           <img id="match-img" src="" alt="">
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="button" data-dismiss="modal">Close</button>
         </div>
       </div>
 
@@ -315,14 +315,14 @@
           ]
         };
 console.log(userData);
-        // AJAX post the data to the friends API.
+        // AJAX post the data to the Cartoon friends API.
         $.post(currentURL + "/api/friends", userData, function(data) {
 
-          // Grab the result from the AJAX post so that the best match's name and photo are displayed.
+          // The AJAX post allows us to grab the info to post it
           $("#match-name").text(data.name);
           $("#match-img").attr("src", data.photo);
 
-          // Show the modal with the best match
+          // Modal pop-up with the best Cartoon friend match
           $("#results-modal").modal("toggle");
 
         });
