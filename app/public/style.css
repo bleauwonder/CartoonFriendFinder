@@ -1,10 +1,8 @@
 body{
   text-align:center;
   color: #1AAB8A;
-}
+  background-image: url('/images/colorful-blur.jpg');
 
-.container {
-  background-image: url('/app/public/images/colorful-blur.jpg');
 }
 
 body:before{
