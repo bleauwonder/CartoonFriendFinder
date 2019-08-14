@@ -1,7 +1,7 @@
 # Cartoon Friend Finder
 
 ## Deployed on Heroku: https://salty-sea-60327.herokuapp.com/
-![Display Cartoon Friend Finder page](/images/cartoonfriend.png)
+![Display Cartoon Friend Finder page](images/cartoonfriend.png)
 ----------------------------------------------------------------------------------------
 ## Welcome to finding your best match with Cartoon Friend Finder!
 
