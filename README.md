@@ -1,5 +1,8 @@
 # Cartoon Friend Finder
 
+## Deployed on Heroku: https://salty-sea-60327.herokuapp.com/
+![Display Cartoon Friend Finder page](./images.cartoonfriend.png)
+----------------------------------------------------------------------------------------
 ## Welcome to finding your best match with Cartoon Friend Finder!
 
 ### By answering a few simple questions about yourself, you'll be matched with the cartoon character that you'd best get along with. It's not what cartoon character are you? But who is your best cartoon pal! 
