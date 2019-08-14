@@ -9,6 +9,8 @@
 
 ### Enter your name and a great photo and have fun answering the survey statements to see who pops up.
 
+### This was an interesting way to use Express to handle routing. It's a full-stack site will take in results from the users' surveys and compare the results with the cartoon friends API that I created with JSON. 
+
 ### The technologies used in this app:
 #### * node.js
 #### * express
