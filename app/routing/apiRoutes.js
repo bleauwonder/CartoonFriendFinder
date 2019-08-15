@@ -2,11 +2,11 @@ var friends = require("../data/friends");
 
 // routing the apiRoutes
 module.exports = function(app) {
-app.get("/api/friends", function(req, res) {
+  app.get("/api/friends", function(req, res) {
     return res.json(friends);
   });
 
-app.post("/api/friends", function(req, res) {
+  app.post("/api/friends", function(req, res) {
     // loop through all possible options
     var bestMatch = {
       name: "",
@@ -21,8 +21,8 @@ app.post("/api/friends", function(req, res) {
     // variable used to calculate difference between new user and all other users scores
     var totalDifference = 0;
     // loop through the friends array to get each set of scores for friends
-    for (var i = 0; i < friends.length - 1; i++) {
-      totalDifference = 0;
+      for (var i = 0; i < friends.length - 1; i++) {
+        totalDifference = 0;
 
       // loop through that friend's score and the user's score to calculate the absolute difference
       for (var j = 0; j < 10; j++) {
@@ -31,9 +31,9 @@ app.post("/api/friends", function(req, res) {
           bestMatch.name = friends[i].name;
           bestMatch.photo = friends[i].photo;
           bestMatch.matchDif = totalDifference;
+          }
         }
       }
-    }
     
     surveyResults.friendName = surveyResults.name.replace(/\s+/g, "").toLowerCase();
     surveyResults.scores = surveyResults.scores.map(function (x) {
@@ -42,5 +42,5 @@ app.post("/api/friends", function(req, res) {
     friends.push(surveyResults);
 
     res.json(bestMatch);
-});
+  });
 };
